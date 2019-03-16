@@ -547,10 +547,34 @@ Kubernetes container image
 None
 
 
-*`counter`*::
+*`table`*::
 +
 --
-type: long
+type: keyword
+
+required: True
+
+PLEASE UPDATE DOCUMENTATION
+
+
+--
+
+*`mid`*::
++
+--
+type: double
+
+required: False
+
+PLEASE UPDATE DOCUMENTATION
+
+
+--
+
+*`curr`*::
++
+--
+type: keyword
 
 required: True
 

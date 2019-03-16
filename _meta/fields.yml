@@ -2,8 +2,18 @@
   title: nbpbeat
   description:
   fields:
-    - name: counter
-      type: long
+    - name: table
+      type: keyword
+      required: true
+      description: >
+        PLEASE UPDATE DOCUMENTATION
+    - name: mid
+      type: double
+      required: false
+      description: >
+        PLEASE UPDATE DOCUMENTATION
+    - name: curr
+      type: keyword
       required: true
       description: >
         PLEASE UPDATE DOCUMENTATION

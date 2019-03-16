@@ -3,5 +3,6 @@
 ############################# Nbpbeat ######################################
 
 nbpbeat:
-  # Defines how often an event is sent to the output
-  period: 1s
+  # Currencies to index
+  currencies: ["EUR", "USD", "GBP", "CHF"]
+  start_day: "2005-01-01"
