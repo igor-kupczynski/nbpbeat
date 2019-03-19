@@ -10,7 +10,7 @@ import (
 
 type Config struct {
 	// Currencies to index
-	Currencies []string `confg:"currencies"`
+	Currencies []string `config:"currencies"`
 
 	// Date in format 2006-01-02 when to start indexing
 	StartDay string `config:"start_day"`

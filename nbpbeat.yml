@@ -72,15 +72,17 @@ setup.kibana:
 #-------------------------- Elasticsearch output ------------------------------
 output.elasticsearch:
   # Array of hosts to connect to.
-  hosts: ["localhost:9200"]
-
-  # Enabled ilm (beta) to use index lifecycle management instead daily indices.
-  #ilm.enabled: false
+  hosts: ["c0e4fa12d5d24ff5a5d10ca9726b0b7b.europe-west3.gcp.cloud.es.io:9243"]
 
   # Optional protocol and basic auth credentials.
-  #protocol: "https"
-  #username: "elastic"
-  #password: "changeme"
+  protocol: "https"
+  username: "elastic"
+  password: "1ffCbpcMen696w3HFgJfEjvc"
+
+  index: "nbpbeat-%{[beat.version]}-%{+yyyy}"
+
+setup.template.name: "nbpbeat-%{[beat.version]}"
+setup.template.pattern: "nbpbeat-%{[beat.version]}-*"
 
 #----------------------------- Logstash output --------------------------------
 #output.logstash:
